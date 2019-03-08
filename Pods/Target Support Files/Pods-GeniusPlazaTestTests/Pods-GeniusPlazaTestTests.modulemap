@@ -1,0 +1,6 @@
+framework module Pods_GeniusPlazaTestTests {
+  umbrella header "Pods-GeniusPlazaTestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
