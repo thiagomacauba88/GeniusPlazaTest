@@ -65,7 +65,7 @@ class HomeViewController: UIViewController {
                 self.musicList(count: self.count.description)
             }))
         }
-        alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel , handler:{ (UIAlertAction)in
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel , handler:{ (UIAlertAction)in
             
         }))
         self.showRange(alert: alert)
