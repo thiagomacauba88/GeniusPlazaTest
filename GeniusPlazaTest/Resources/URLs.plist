@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>home</key>
-	<string>https://rss.itunes.apple.com/api/v1/us/apple-music/coming-soon/all/{count}/explicit.json</string>
+	<string>https://rss.itunes.apple.com/api/v1/us/{mediaType}/all/10/explicit.json</string>
 </dict>
 </plist>

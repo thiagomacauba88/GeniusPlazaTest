@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		216B34DA816DE163761FAE15 /* Pods_GeniusPlazaTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD6B35CE04506ED6A2681A3 /* Pods_GeniusPlazaTest.framework */; };
 		774A47F702C67F086C53576F /* Pods_GeniusPlazaTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D748A42EC68DE65CFDC03B /* Pods_GeniusPlazaTestTests.framework */; };
+		AF8589B1223303CF00F40B3A /* MediaTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8589B0223303CF00F40B3A /* MediaTypeEnum.swift */; };
 		AFFC85CD2231BCC900AEB57D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC85CC2231BCC900AEB57D /* AppDelegate.swift */; };
 		AFFC85CF2231BCC900AEB57D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC85CE2231BCC900AEB57D /* HomeViewController.swift */; };
 		AFFC85D22231BCC900AEB57D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFC85D02231BCC900AEB57D /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		A7D748A42EC68DE65CFDC03B /* Pods_GeniusPlazaTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeniusPlazaTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3E0437BE978F366DB649FD /* Pods-GeniusPlazaTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeniusPlazaTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeniusPlazaTestTests/Pods-GeniusPlazaTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF110BFA36CB9DD15E43F1FC /* Pods-GeniusPlazaTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeniusPlazaTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeniusPlazaTestUITests/Pods-GeniusPlazaTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AF8589B0223303CF00F40B3A /* MediaTypeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaTypeEnum.swift; sourceTree = "<group>"; };
 		AFFC85C92231BCC900AEB57D /* GeniusPlazaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeniusPlazaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFC85CC2231BCC900AEB57D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFFC85CE2231BCC900AEB57D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AF8589AF223303BF00F40B3A /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				AF8589B0223303CF00F40B3A /* MediaTypeEnum.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 		AFFC85C02231BCC900AEB57D = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				AFFC86002231CC4100AEB57D /* Application */,
+				AF8589AF223303BF00F40B3A /* Enum */,
 				AFFC85FE2231CC3100AEB57D /* Conveniences */,
 				AFFC85FD2231CC2B00AEB57D /* Models */,
 				AFFC85FC2231CC2300AEB57D /* Resources */,
@@ -575,6 +586,7 @@
 				AFFC8632223298EB00AEB57D /* LoadingConvenience.swift in Sources */,
 				AFFC8630223298CF00AEB57D /* ViewExtension.swift in Sources */,
 				AFFC863422329D0700AEB57D /* UIViewControllerExtension.swift in Sources */,
+				AF8589B1223303CF00F40B3A /* MediaTypeEnum.swift in Sources */,
 				AFFC85CD2231BCC900AEB57D /* AppDelegate.swift in Sources */,
 				AFFC86132231CE1800AEB57D /* URLInfo.swift in Sources */,
 			);
@@ -753,6 +765,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JLE8SUY4AH;
 				INFOPLIST_FILE = "$(SRCROOT)/GeniusPlazaTest/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -771,6 +784,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JLE8SUY4AH;
 				INFOPLIST_FILE = "$(SRCROOT)/GeniusPlazaTest/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

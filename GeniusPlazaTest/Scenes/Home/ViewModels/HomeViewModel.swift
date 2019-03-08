@@ -16,9 +16,9 @@ class HomeViewModel {
     var homeResponse: HomeResponse?
     
     // MARK: - Service
-    func musicList(count: String) -> Observable<HomeResponse?> {
+    func musicList(mediaType: String) -> Observable<HomeResponse?> {
         return Observable.create { observable in
-            self.service.musicList(count:count, success: { (home, serviceResponse) in
+            self.service.musicList(mediaType: mediaType, success: { (home, serviceResponse) in
                 if let response = home  {
                     self.homeResponse = response
                     observable.onNext(self.homeResponse)

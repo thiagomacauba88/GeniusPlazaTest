@@ -14,10 +14,21 @@ class HomeViewController: UIViewController {
     // MARK: - Properties
     let viewModel = HomeViewModel()
     let disposeBag = DisposeBag()
-    var count = 10
+    var mediaTypeSelected = ""
+    let list = [MediaTypeEnum.MediaTypeDescription.itunesMusic, MediaTypeEnum.MediaTypeDescription.iosApps, MediaTypeEnum.MediaTypeDescription.macApps, MediaTypeEnum.MediaTypeDescription.audioBooks,
+        MediaTypeEnum.MediaTypeDescription.books,
+        MediaTypeEnum.MediaTypeDescription.tvShows,
+        MediaTypeEnum.MediaTypeDescription.movies,
+        MediaTypeEnum.MediaTypeDescription.itunesU,
+        MediaTypeEnum.MediaTypeDescription.podcasts,
+        MediaTypeEnum.MediaTypeDescription.musicVideos]
     
     // MARK: - Properties
-    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var titleLabel: UILabel! {
+        didSet {
+            self.titleLabel.text = ""
+        }
+    }
     @IBOutlet var tableView: UITableView! {
         didSet {
             self.tableView.dataSource = self
@@ -30,8 +41,8 @@ class HomeViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.musicList(count: self.count.description)
-        self.setNavigationTitle(text: "List")
+        self.musicList(mediaType: MediaTypeEnum().mediaTypeUrl(for: self.list.first?.rawValue ?? ""))
+        self.mediaTypeSelected = self.list.first?.rawValue ?? ""
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -47,22 +58,11 @@ class HomeViewController: UIViewController {
     func showActionSheet() {
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         alert.view.tintColor = UIColor.black
-        let list = ["Show 10", "Show 25", "Show 50", "Show 100"]
-        for item in list {
-            alert.addAction(UIAlertAction(title: item, style: .default , handler:{ (UIAlertAction) in
-                switch item {
-                case "Show 10":
-                    self.count = 10
-                case "Show 25":
-                    self.count = 25
-                case "Show 50":
-                    self.count = 50
-                case "Show 100":
-                    self.count = 100
-                default:
-                    return
-                }
-                self.musicList(count: self.count.description)
+        for item in self.list {
+            alert.addAction(UIAlertAction(title: item.rawValue, style: .default , handler:{ (UIAlertAction) in
+                
+                self.musicList(mediaType: MediaTypeEnum().mediaTypeUrl(for: item.rawValue))
+                self.mediaTypeSelected = item.rawValue
             }))
         }
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel , handler:{ (UIAlertAction)in
@@ -119,14 +119,14 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
 
 // MARK: - Service
 extension HomeViewController {
-    func musicList(count: String) {
+    func musicList(mediaType: String) {
         self.view.startLoading()
-        self.viewModel.musicList(count: count)
+        self.viewModel.musicList(mediaType: mediaType)
             .observeOn(MainScheduler.instance).subscribe(onNext: { (musicList) in
                 if let _ = musicList {
                     self.tableView.isHidden = false
                     self.tableView.reloadData()
-                    self.titleLabel.text = "List - "+self.count.description
+                    self.titleLabel.text = self.mediaTypeSelected
                 }
             }, onError: { (error) in
             }, onCompleted: {

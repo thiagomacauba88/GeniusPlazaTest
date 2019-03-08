@@ -2,4 +2,134 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GeniusPlazaTest/Services/HomeServices.swift"
+            timestampString = "573771089.425069"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "musicList(mediaType:success:onFailure:onCompletion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GeniusPlazaTest.HomeServices.musicList(mediaType: Swift.String, success: (Swift.Optional&lt;GeniusPlazaTest.HomeResponse&gt;, Swift.Optional&lt;GeniusPlazaTest.ServiceResponse&gt;) -&gt; (), onFailure: Swift.Optional&lt;(Swift.Optional&lt;GeniusPlazaTest.ServiceResponse&gt;) -&gt; ()&gt;, onCompletion: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "GeniusPlazaTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thiago/Documents/Projetos/Interview/GeniusPlazaTest/GeniusPlazaTest/Services/HomeServices.swift"
+                  timestampString = "573770383.994951"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;GeniusPlazaTest.HomeResponse&gt;, Swift.Optional&lt;GeniusPlazaTest.ServiceResponse&gt;) -&gt; () in GeniusPlazaTest.HomeServices.musicList(mediaType: Swift.String, success: (Swift.Optional&lt;GeniusPlazaTest.HomeResponse&gt;, Swift.Optional&lt;GeniusPlazaTest.ServiceResponse&gt;) -&gt; (), onFailure: Swift.Optional&lt;(Swift.Optional&lt;GeniusPlazaTest.ServiceResponse&gt;) -&gt; ()&gt;, onCompletion: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "GeniusPlazaTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thiago/Documents/Projetos/Interview/GeniusPlazaTest/GeniusPlazaTest/Services/HomeServices.swift"
+                  timestampString = "573770383.996807"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GeniusPlazaTest/Scenes/Home/ViewControllers/HomeViewController.swift"
+            timestampString = "573771089.425445"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "musicList(mediaType:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GeniusPlazaTest/Services/HomeServices.swift"
+            timestampString = "573771089.4259239"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "musicList(mediaType:success:onFailure:onCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GeniusPlazaTest/Services/HomeServices.swift"
+            timestampString = "573771089.426162"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "musicList(mediaType:success:onFailure:onCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GeniusPlazaTest/Services/HomeServices.swift"
+            timestampString = "573771089.426369"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "getChangePasswordUrl(mediaType:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GeniusPlazaTest/Scenes/Home/ViewControllers/HomeViewController.swift"
+            timestampString = "573771089.426578"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -11,14 +11,14 @@ import UIKit
 class HomeServices {
 
     // MARK: Get Url Strings
-    func getChangePasswordUrl(count: String) -> String {
+    func getChangePasswordUrl(mediaType: String) -> String {
         var url = URLInfo.url(fromKey: "home")
-        url = url.replacingOccurrences(of: "{count}", with: count)
+        url = url.replacingOccurrences(of: "{mediaType}", with: mediaType)
         return url
     }
     
-    func musicList(count: String, success: @escaping ((_ sucessObject: HomeResponse?, _ serviceResponse: ServiceResponse?) -> Void), onFailure failure:((ServiceResponse?) -> Void)? = nil, onCompletion completion:(() -> Void)? = nil) {
-        if let url = URL(string: getChangePasswordUrl(count: count)) {
+    func musicList(mediaType: String, success: @escaping ((_ sucessObject: HomeResponse?, _ serviceResponse: ServiceResponse?) -> Void), onFailure failure:((ServiceResponse?) -> Void)? = nil, onCompletion completion:(() -> Void)? = nil) {
+        if let url = URL(string: getChangePasswordUrl(mediaType: mediaType)) {
             Service.shared.request(httpMethod: .get, url: url, payload: nil, auth: true).response(succeed: { (_ homeResponse: HomeResponse?, _ serviceResponse: ServiceResponse?) in
                 if let response = homeResponse, let content = serviceResponse {
                     success(response, content)
